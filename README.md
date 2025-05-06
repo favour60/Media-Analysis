@@ -71,9 +71,9 @@ JOIN Project3.dbo.Critical_review_data$
 ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_review_data$.[Movie ID]
 ```
 ### Insights and Recommendations
-- **Box Office Perfromance Insights**
-![Movie box analysis 3 - Power BI Desktop (May 2024) 5_4_2025 3_55_00 PM](https://github.com/user-attachments/assets/b1b676ca-18af-410e-a7ba-3b32a8a21c51)
 
+![Movie box analysis 3 - Power BI Desktop (May 2024) 5_4_2025 3_55_00 PM](https://github.com/user-attachments/assets/b1b676ca-18af-410e-a7ba-3b32a8a21c51)
+- **Box Office Perfromance Insights**
   - The financial overview indicates that movies have generally been highly profitable, often earning well beyond their production budgets.
   - Horror films, in particular, outperformed broader genres like action, likely due to their lower production costs combined with strong box office returns.
   - Directors such as Brittany Webster and Catherine Good consistently produce high-revenue films, highlighting their potential value to studios.
@@ -85,15 +85,16 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
   - Exploring hybrid genres may help attract broader audiences while continuing to produce a variety of films with an emphasis on those that show strong financial performance.
   - Additionally, aligning marketing strategies and release schedules with peak cinema periods based on historical trends can enhance overall success.
 
-- **Audience Demographics Insights**
-![Movie box analysis 3 - Power BI Desktop (May 2024) 5_4_2025 3_55_11 PM](https://github.com/user-attachments/assets/97dacd42-f34e-4a0f-bd7a-7a7d50c70ad2)
 
+- **Audience Demographics Insights**
   - Middle aged individuals show a strong prefernce for thriller movies compared to both adolescents and older alduts, while older aldutls tend to favor romance, sci-fi, thriller, drama, and action more than other age groups. Adolescents, on the other hand, lean more toward drama.
   - Across all genres, females make up a larger portion of the audience, indicating they are a more engaged or dominant demographic in movie consumption.
   - Viewing habits also vary by genre, with horror, comedy, and sci-fi being primarily consumed through downloads, romance and action movies through CD purchases, and thriller and drama films being most popular on streaming platforms.
 
   **Recommendations**
-  - Market strategies and content creation can be more effective 
+  - Tailoring genre-based marketing by age-group -- such as targeting thrillers to middle-aged viewers, promoting romance, sci-fi, drama, and action to older adults, and focusing drama on adolescents -- can significantly improve engagement, satisfaction, and audience retention.
+  - Market strategies and content creation can be more effective when tailored to female preferences, while still exploring ways to engage the male audience
+  - To maximize reach and revenue, it's essential to align distribution strategies with genre performance. For example, Horror, Comedy, and Sci-Fi genres thrive through downloads, so investing in promotional campaigns, exclusive downloadable content, and partnerships with platforms like iTunes or Google Play is beneficial. Romance and Action movies, which are more commonly purchased, can gain traction through bundles, collector's editions, and discounts on popular purchase platforms like Amazon or DVD retailers. For Thriller and Drama, which are often streamed, enhancing the streamihg experience through strong licensing deals, optimized discoverability, and high-quality subtitles or dubbing is key.
 
 
 

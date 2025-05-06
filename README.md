@@ -61,5 +61,6 @@ DELETE
 FROM deleteDuplicates
 WHERE row_num > 1
 ```
+## Insights and Recommendations
 
 

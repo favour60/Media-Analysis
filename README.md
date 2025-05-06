@@ -108,7 +108,9 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
   - Providing accurate trailers and promotional content can manage audience expectations, and fostering better communication between critics and viewers can help bridge their differing perspectives and build mutual understanding.
  
 ### Limitation and Conclusion
+Due to the significant amount of missing values contained in the dataset that had to either be removed or filled using average imputation, the overall data quality and accuracy were affected.
 
+However, this project provided a valuable opportunity to strengthen my skills in data cleaning using SQL and in creating visualizations with PowerBI. It also reinforced the growing importance of data-driven insights across nearly every industry worldwide.
 
 
 

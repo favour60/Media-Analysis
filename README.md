@@ -87,19 +87,21 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
 
 ### Insights and Recommendations
 
-- **Box Office Perfromance Insights**
-  - The financial overview indicates that movies have generally been highly profitable, often earning well beyond their production budgets.
-  - Horror films, in particular, outperformed broader genres like action, likely due to their lower production costs combined with strong box office returns.
-  - Directors such as Brittany Webster and Catherine Good consistently produce high-revenue films, highlighting their potential value to studios.
-  - Additionally, there is clear evidence of market recovery and growth following 2019.
- 
-  **Recommendations**
-  - To maximize profit margins, it's important to maintain disciplined production budgets, especially in lower-cost genres like Horror.
-  - Investing in directors with a track record of box office success and focusing on high-performing genres such Horror, Sci-Fi, and Romance can boost returns.
-  - Exploring hybrid genres may help attract broader audiences while continuing to produce a variety of films with an emphasis on those that show strong financial performance.
-  - Additionally, aligning marketing strategies and release schedules with peak cinema periods based on historical trends can enhance overall success.
- 
+#### Box Office Perfromance;
+
 ![Movie box analysis 3 - Power BI Desktop (May 2024) 5_4_2025 3_55_00 PM](https://github.com/user-attachments/assets/b1b676ca-18af-410e-a7ba-3b32a8a21c51)
+
+**Insights** 
+- The financial overview indicates that movies have generally been highly profitable, often earning well beyond their production budgets.
+- Horror films, in particular, outperformed broader genres like action, likely due to their lower production costs combined with strong box office returns.
+- Directors such as Brittany Webster and Catherine Good consistently produce high-revenue films, highlighting their potential value to studios.
+- Additionally, there is clear evidence of market recovery and growth following 2019.
+ 
+**Recommendations**
+- To maximize profit margins, it's important to maintain disciplined production budgets, especially in lower-cost genres like Horror.
+- Investing in directors with a track record of box office success and focusing on high-performing genres such Horror, Sci-Fi, and Romance can boost returns.
+- Exploring hybrid genres may help attract broader audiences while continuing to produce a variety of films with an emphasis on those that show strong financial performance.
+- Additionally, aligning marketing strategies and release schedules with peak cinema periods based on historical trends can enhance overall success.
 
 - **Audience Demographics Insights**
   - Middle aged individuals show a strong prefernce for thriller movies compared to both adolescents and older alduts, while older aldutls tend to favor romance, sci-fi, thriller, drama, and action more than other age groups. Adolescents, on the other hand, lean more toward drama.

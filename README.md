@@ -1,18 +1,18 @@
 # Media Performance Analysis
-## Project Objective
+### Project Objective
 A little bit of backstory to this project, a private entertainment company is planning to launch a new show analyzing the trends and performance of blockbuster movies from 2015 to 2023, they want to avoid subjective opinions and focus on data-driven insights.
 
 So, this project aims to explore themes like Box Office Performance, Audience demographics, Critical reception, Streaming platform popularity in order to generate meaningful insights that could influence future content strategies
-## Key Metrics to note
+### Key Metrics to note
 - Box Office (Total & Average)
 - Production Budget (Total & Average)
 - Average Audience Age & Rating
 - Average Critical Review Score
-## Tools and Steps involved in this project
+### Tools and Steps involved in this project
 - Extracted raw Excel data into **SQL** and conducted thorough cleaning
 - Used SQL for tasks such as age group categorization and null handling
 - Exported the cleaned data into **PowerBI** for visualization and trend analysis
-## Challenges & Solutions
+### Challenges & Solutions
 1. ***Null Values***; I observed that the dataset contained numerous Null values, particularly in fields like box office gross, production budget, and age. To address this, I applied average imputation in SQL to fill these gaps, preserving valuable data for more accurate analysis. However, for columns such as date, director, and movie title, I opted to use the DELETE statement to remove rows with missing entries.
 ```SQL
  --UPDATING ROWS WITH NULL VALUES USING AVERAGE IMPUTATION------------
@@ -70,13 +70,28 @@ ON Project3.dbo.movie_box_office_data$.[Movie ID] = Project3.dbo.Audience_demogr
 JOIN Project3.dbo.Critical_review_data$
 ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_review_data$.[Movie ID]
 ```
-## Insights and Recommendations
+### Insights and Recommendations
 - **Box Office Perfromance Insights**
+![Movie box analysis 3 - Power BI Desktop (May 2024) 5_4_2025 3_55_00 PM](https://github.com/user-attachments/assets/b1b676ca-18af-410e-a7ba-3b32a8a21c51)
+
   - The financial overview indicates that movies have generally been highly profitable, often earning well beyond their production budgets.
   - Horror films, in particular, outperformed broader genres like action, likely due to their lower production costs combined with strong box office returns.
   - Directors such as Brittany Webster and Catherine Good consistently produce high-revenue films, highlighting their potential value to studios.
   - Additionally, there is clear evidence of market recovery and growth following 2019.
  
+  **Recommendations**
+  - To maximize profit margins, it's important to maintain disciplined production budgets, especially in lower-cost genres like Horror.
+  - Investing in directors with a track record of box office success and focusing on high-performing genres such Horror, Sci-Fi, and Romance can boost returns.
+  - Exploring hybrid genres may help attract broader audiences while continuing to produce a variety of films with an emphasis on those that show strong financial performance.
+  - Additionally, aligning marketing strategies and release schedules with peak cinema periods based on historical trends can enhance overall success.
+
+- **Audience Demographics Insights**
+![Movie box analysis 3 - Power BI Desktop (May 2024) 5_4_2025 3_55_11 PM](https://github.com/user-attachments/assets/97dacd42-f34e-4a0f-bd7a-7a7d50c70ad2)
+
+  - Middle aged individuals show a strong prefernce for thriller movies compared to both adolescents and older alduts, while older aldutls tend to favor romance, sci-fi, thriller, drama, and action more than other age groups. Adolescents, on the other hand, lean more toward drama.
+  - Across all genres, females make up a larger portion of the audience, indicating they are a more engaged or dominant demographic in movie consumption.
+  - Viewing habits also vary by genre, with horror, comedy, and sci-fi being primarily consumed through downloads, romance and action movies through CD purchases, and thriller and drama films being most popular on streaming platforms.
+
   **Recommendations**
 
 

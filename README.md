@@ -33,7 +33,7 @@ FROM Project3.dbo.movie_box_office_data$)
 WHERE Project3.dbo.movie_box_office_data$.[Production Budget ($)] IS NULL
 ```
 
-- ***Inconsistent labels***; I also identified inconsistencies in the gender labels. To resolve this, I used the UPDATE statement in SQL to standardize gender entries (e.g. ensuring all values consistently reflected "Male" or "Female")
+- ***Inconsistent labels***; I also identified inconsistencies in the gender labels. To resolve this, I used the UPDATE statement in SQL to standardize gender entries (e.g. ensuring all values consistently reflected "Male" or "Female").
 ``` SQL
  ----STANDARDISING INCONSISTENT ROWS AND UPDATING THE ROWS------------- 
 ---M to Male
@@ -46,3 +46,20 @@ UPDATE Project3.dbo.Audience_demographic_data$
 SET Project3.dbo.Audience_demographic_data$.Gender = 'Female'
 WHERE Project3.dbo.Audience_demographic_data$.Gender = 'F'
 ```
+
+- ***Duplicates***; For the duplicates records, I used a nested query along with a temporary table (CTE) created using the WITH clause, and employed the ROW_NUMBER window function in SQL. This approach allowed me to efficiently identify and eliminate redundant data.
+```SQL
+ --CHECKING FOR AND DELETING DUPLICATES
+WITH deleteDuplicates AS
+(
+	SELECT Project3.dbo.movie_box_office_data$.[Movie ID],
+	ROW_NUMBER() OVER(
+	PARTITION BY Project3.dbo.movie_box_office_data$.[Movie ID] ORDER BY Project3.dbo.movie_box_office_data$.[Title]) AS row_num
+	FROM Project3.dbo.movie_box_office_data$
+)
+DELETE
+FROM deleteDuplicates
+WHERE row_num > 1
+```
+
+

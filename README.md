@@ -13,5 +13,36 @@ So, this project aims to explore themes like Box Office Performance, Audience de
 - Used SQL for tasks such as age group categorization and null handling
 - Exported the cleaned data into **PowerBI** for visualization and trend analysis
 ## Challenges & Solutions
-- Null Values
-    - I observed that the dataset contained numerous Null values, particularly in fields like box office gross, production budget, and age. To address this, I applied average imputation in SQL to fill these gaps, preserving valuable data for more accurate analysis. However, for columns such as date, director, and movie title, I opted to use the DELETE statement to remove rows with missing entries.
+- ***Null Values***; I observed that the dataset contained numerous Null values, particularly in fields like box office gross, production budget, and age. To address this, I applied average imputation in SQL to fill these gaps, preserving valuable data for more accurate analysis. However, for columns such as date, director, and movie title, I opted to use the DELETE statement to remove rows with missing entries.
+```SQL
+ --UPDATING ROWS WITH NULL VALUES USING AVERAGE IMPUTATION------------
+---box office gross
+UPDATE Project3.dbo.movie_box_office_data$
+SET Project3.dbo.movie_box_office_data$.[Box Office Gross ($)] = (SELECT AVG(Project3.dbo.movie_box_office_data$.[Box Office Gross ($)]) AS [avg box ofice gross]
+FROM Project3.dbo.movie_box_office_data$)
+WHERE Project3.dbo.movie_box_office_data$.[Box Office Gross ($)] IS NULL
+
+---forgot to include round up so updating after
+SELECT Project3.dbo.movie_box_office_data$.[Box Office Gross ($)] FROM Project3.dbo.movie_box_office_data$
+UPDATE Project3.dbo.movie_box_office_data$ SET Project3.dbo.movie_box_office_data$.[Box Office Gross ($)] = ROUND(Project3.dbo.movie_box_office_data$.[Box Office Gross ($)], 0)
+
+---production budget
+UPDATE Project3.dbo.movie_box_office_data$
+SET Project3.dbo.movie_box_office_data$.[Production Budget ($)] = (SELECT ROUND (AVG(Project3.dbo.movie_box_office_data$.[Production Budget ($)]), 0) AS [avg production budget]
+FROM Project3.dbo.movie_box_office_data$)
+WHERE Project3.dbo.movie_box_office_data$.[Production Budget ($)] IS NULL
+```
+
+- ***Inconsistent labels***; I also identified inconsistencies in the gender labels. To resolve this, I used the UPDATE statement in SQL to standardize gender entries (e.g. ensuring all values consistently reflected "Male" or "Female")
+``` SQL
+ ----STANDARDISING INCONSISTENT ROWS AND UPDATING THE ROWS------------- 
+---M to Male
+UPDATE Project3.dbo.Audience_demographic_data$
+SET Project3.dbo.Audience_demographic_data$.Gender = 'Male'
+WHERE Project3.dbo.Audience_demographic_data$.Gender = 'M'
+
+---F to Female
+UPDATE Project3.dbo.Audience_demographic_data$
+SET Project3.dbo.Audience_demographic_data$.Gender = 'Female'
+WHERE Project3.dbo.Audience_demographic_data$.Gender = 'F'
+```

@@ -93,6 +93,7 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
   - Viewing habits also vary by genre, with horror, comedy, and sci-fi being primarily consumed through downloads, romance and action movies through CD purchases, and thriller and drama films being most popular on streaming platforms.
 
   **Recommendations**
+  - Market strategies and content creation can be more effective 
 
 
 

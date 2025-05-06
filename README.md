@@ -1,6 +1,6 @@
 # Media Performance Analysis
 
-A SQL and PowerBI Project
+Historical Movie perfromance from 2015 to 2023
 
 ### Project Objective
 

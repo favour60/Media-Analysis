@@ -1,4 +1,5 @@
 # Media Performance Analysis
+A SQL and PowerBI Project
 ### Project Objective
 A little bit of backstory to this project, a private entertainment company is planning to launch a new show analyzing the trends and performance of blockbuster movies from 2015 to 2023, they want to avoid subjective opinions and focus on data-driven insights.
 

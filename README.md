@@ -102,7 +102,7 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
 - The financial overview indicates that movies have generally been highly profitable, often earning well beyond their production budgets.
 - Horror films, in particular, outperformed broader genres like action, likely due to their lower production costs combined with strong box office returns.
 - Directors such as Brittany Webster and Catherine Good consistently produce high-revenue films, highlighting their potential value to studios.
-- Additionally, there is clear evidence of market recovery and growth following 2019.
+- Additionally, there is clear evidence of market recovery and growth after 2019.
  
 **Recommendations**
 

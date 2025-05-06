@@ -85,6 +85,7 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
   - Exploring hybrid genres may help attract broader audiences while continuing to produce a variety of films with an emphasis on those that show strong financial performance.
   - Additionally, aligning marketing strategies and release schedules with peak cinema periods based on historical trends can enhance overall success.
 
+![Movie box analysis 3 - Power BI Desktop (May 2024) 5_6_2025 4_24_23 AM](https://github.com/user-attachments/assets/9f00f5dd-b7a4-4959-88a2-c3660564295f)
 
 - **Audience Demographics Insights**
   - Middle aged individuals show a strong prefernce for thriller movies compared to both adolescents and older alduts, while older aldutls tend to favor romance, sci-fi, thriller, drama, and action more than other age groups. Adolescents, on the other hand, lean more toward drama.
@@ -95,6 +96,16 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
   - Tailoring genre-based marketing by age-group -- such as targeting thrillers to middle-aged viewers, promoting romance, sci-fi, drama, and action to older adults, and focusing drama on adolescents -- can significantly improve engagement, satisfaction, and audience retention.
   - Market strategies and content creation can be more effective when tailored to female preferences, while still exploring ways to engage the male audience
   - To maximize reach and revenue, it's essential to align distribution strategies with genre performance. For example, Horror, Comedy, and Sci-Fi genres thrive through downloads, so investing in promotional campaigns, exclusive downloadable content, and partnerships with platforms like iTunes or Google Play is beneficial. Romance and Action movies, which are more commonly purchased, can gain traction through bundles, collector's editions, and discounts on popular purchase platforms like Amazon or DVD retailers. For Thriller and Drama, which are often streamed, enhancing the streamihg experience through strong licensing deals, optimized discoverability, and high-quality subtitles or dubbing is key.
+
+![Movie box analysis 3 - Power BI Desktop (May 2024) 5_5_2025 7_10_53 AM](https://github.com/user-attachments/assets/abe49700-1cf3-481c-8823-211f7f71a7d5)
+
+- **Critical Reception Insights**
+  - The analysis reveals significant gaps between audience ratings and critical review score. For instance, the movie *Hotel Act South* received a high audience rating of 7, well above average, but a low critical review score of 43. Conversely, *Effort* earned a strong critical score of 79, yet had a very low audience rating of 1. These discrepancies may stem from differing expectations and priorities between critics and viewers, as well as potential cultural or social influences, lack of market transparency, or the effects of hype or backlash.
+
+  **Recommendations**
+  - Enhancing transparency in both critic and audience scores is essential, including diversifying the pool of critics to represent various cultures, age groups, and backgrounds for a more inclusive reflection of audience experiences.
+  - Implementing measures like requiring proof of ticket purchase or streaming access can help prevent review bombimng, while encouraging detailed reviews instead of basic ratings can offer more meaningful insights.
+  - Providing accurate trailers and promotional content can manage audience expectations, and fostering better communication between critics and viewers can help bridge their differing perspectives and build mutual understanding.
 
 
 

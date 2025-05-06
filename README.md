@@ -106,6 +106,10 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
   - Enhancing transparency in both critic and audience scores is essential, including diversifying the pool of critics to represent various cultures, age groups, and backgrounds for a more inclusive reflection of audience experiences.
   - Implementing measures like requiring proof of ticket purchase or streaming access can help prevent review bombimng, while encouraging detailed reviews instead of basic ratings can offer more meaningful insights.
   - Providing accurate trailers and promotional content can manage audience expectations, and fostering better communication between critics and viewers can help bridge their differing perspectives and build mutual understanding.
+ 
+### Limitation and Conclusion
+
+
 
 
 

@@ -44,6 +44,7 @@ WHERE Project3.dbo.movie_box_office_data$.[Production Budget ($)] IS NULL
 ```
 
 2. ***Inconsistent labels***; I also identified inconsistencies in the gender labels. To resolve this, I used the UPDATE statement in SQL to standardize gender entries (e.g. ensuring all values consistently reflected "Male" or "Female").
+
 ``` SQL
  ----STANDARDISING INCONSISTENT ROWS AND UPDATING THE ROWS------------- 
 ---M to Male
@@ -58,6 +59,7 @@ WHERE Project3.dbo.Audience_demographic_data$.Gender = 'F'
 ```
 
 3. ***Duplicates***; For the duplicates records, I used a nested query along with a temporary table (CTE) created using the WITH clause, and employed the ROW_NUMBER window function in SQL. This approach allowed me to efficiently identify and eliminate redundant data.
+
 ```SQL
  --CHECKING FOR AND DELETING DUPLICATES
 WITH deleteDuplicates AS
@@ -73,6 +75,7 @@ WHERE row_num > 1
 ```
 
 4. ***Multiple Data Tables***; Additionally, the original dataset was spread across multiple Excel sheets. After individually cleaning these tables using SQL, I used JOIN operations to consolidate the data and transfer it to PowerBI for visualization. UNION wasn't applicable, as the tables lacked matching column structures required for merging into a single table.
+
 ```SQL
  SELECT * FROM Project3.dbo.movie_box_office_data$
 JOIN Project3.dbo.Audience_demographic_data$
@@ -80,7 +83,9 @@ ON Project3.dbo.movie_box_office_data$.[Movie ID] = Project3.dbo.Audience_demogr
 JOIN Project3.dbo.Critical_review_data$
 ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_review_data$.[Movie ID]
 ```
+
 ### Insights and Recommendations
+
 - **Box Office Perfromance Insights**
   - The financial overview indicates that movies have generally been highly profitable, often earning well beyond their production budgets.
   - Horror films, in particular, outperformed broader genres like action, likely due to their lower production costs combined with strong box office returns.
@@ -118,6 +123,7 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
  ![Movie box analysis 3 - Power BI Desktop (May 2024) 5_5_2025 7_10_53 AM](https://github.com/user-attachments/assets/abe49700-1cf3-481c-8823-211f7f71a7d5)
  
 ### Limitation and Conclusion
+
 Due to the significant amount of missing values contained in the dataset that had to either be removed or filled using average imputation, the overall data quality and accuracy were affected.
 
 However, this project provided a valuable opportunity to strengthen my skills in data cleaning using SQL and in creating visualizations with PowerBI. It also reinforced the growing importance of data-driven insights across nearly every industry worldwide.

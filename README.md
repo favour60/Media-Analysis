@@ -100,9 +100,9 @@ ON Project3.dbo.Audience_demographic_data$.[Movie ID] = Project3.dbo.Critical_re
 
 **Insights** 
 - The financial overview indicates that movies have generally been highly profitable, often earning well beyond their production budgets.
-- Horror films, in particular, outperformed broader genres like action, likely due to their lower production costs combined with strong box office returns.
-- Directors such as Brittany Webster and Catherine Good consistently produce high-revenue films, highlighting their potential value to studios.
-- Additionally, there is clear evidence of market recovery and growth after 2019.
+- Horror films with a high average revenue of **$1,161,493,627**, in particular, outperformed broader genres like action with an average revenue of **$977,573,871**, likely due to their lower production costs combined with strong box office returns.
+- Directors such as Brittany Webster and Catherine Good consistently produce high-revenue films, **$1,240,922,459** and **$1,225,312,085** respectively highlighting their potential value to studios.
+- Additionally, there is clear evidence of market recovery and growth after 2019, from a low revenue of **$8,483,581,038** in 2019 to a surge of **$22,153,976,072** in 2022
  
 **Recommendations**
 

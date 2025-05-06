@@ -2,6 +2,14 @@
 
 Historical Movie perfromance from 2015 to 2023
 
+## Table of Content
+- [Project Objective](#project-objective)
+- [Key Metrics to note](#key-metrics-to-note)
+- [Tools and Steps involved in this project](#tools-and-steps-involved-in-this-project)
+- [Challenges and Solutions](#challenges-and-solutions)
+- [Overview of Insights and Recommendations](#overview-of-insights-and-recommendations)
+- [Limitation and Conclusion](#limitation-and-conclusion)
+
 ### Project Objective
 
 A little bit of backstory to this project, a private entertainment company is planning to launch a new show analyzing the trends and performance of blockbuster movies from 2015 to 2023, they want to avoid subjective opinions and focus on data-driven insights.
@@ -20,7 +28,7 @@ So, this project aims to explore themes like Box Office Performance, Audience de
 1. Extracted raw Excel data into **SQL**, where i conducted thorough cleaning task such as null handling, data standardizing, duplicates removal, etc.
 2. Exported the cleaned data into **PowerBI** for task such as age group categorization, visualization and trend analysis
 
-### Challenges & Solutions
+### Challenges and Solutions
 
 - ***Null Values***; I observed that the dataset contained numerous Null values, particularly in fields like box office gross, production budget, and age. To address this, I applied average imputation in SQL to fill these gaps, preserving valuable data for more accurate analysis. However, for columns such as date, director, and movie title, I opted to use the DELETE statement to remove rows with missing entries.
 

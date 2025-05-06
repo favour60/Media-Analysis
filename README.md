@@ -23,7 +23,7 @@ So, this project aims to explore themes like Box Office Performance, Audience de
 
 ### Challenges & Solutions
 
-1. ***Null Values***; I observed that the dataset contained numerous Null values, particularly in fields like box office gross, production budget, and age. To address this, I applied average imputation in SQL to fill these gaps, preserving valuable data for more accurate analysis. However, for columns such as date, director, and movie title, I opted to use the DELETE statement to remove rows with missing entries.
+- ***Null Values***; I observed that the dataset contained numerous Null values, particularly in fields like box office gross, production budget, and age. To address this, I applied average imputation in SQL to fill these gaps, preserving valuable data for more accurate analysis. However, for columns such as date, director, and movie title, I opted to use the DELETE statement to remove rows with missing entries.
 
 ```SQL
  --UPDATING ROWS WITH NULL VALUES USING AVERAGE IMPUTATION------------
@@ -44,7 +44,7 @@ FROM Project3.dbo.movie_box_office_data$)
 WHERE Project3.dbo.movie_box_office_data$.[Production Budget ($)] IS NULL
 ```
 
-2. ***Inconsistent labels***; I also identified inconsistencies in the gender labels. To resolve this, I used the UPDATE statement in SQL to standardize gender entries (e.g. ensuring all values consistently reflected "Male" or "Female").
+- ***Inconsistent labels***; I also identified inconsistencies in the gender labels. To resolve this, I used the UPDATE statement in SQL to standardize gender entries (e.g. ensuring all values consistently reflected "Male" or "Female").
 
 ``` SQL
  ----STANDARDISING INCONSISTENT ROWS AND UPDATING THE ROWS------------- 
@@ -59,7 +59,7 @@ SET Project3.dbo.Audience_demographic_data$.Gender = 'Female'
 WHERE Project3.dbo.Audience_demographic_data$.Gender = 'F'
 ```
 
-3. ***Duplicates***; For the duplicates records, I used a nested query along with a temporary table (CTE) created using the WITH clause, and employed the ROW_NUMBER window function in SQL. This approach allowed me to efficiently identify and eliminate redundant data.
+- ***Duplicates***; For the duplicates records, I used a nested query along with a temporary table (CTE) created using the WITH clause, and employed the ROW_NUMBER window function in SQL. This approach allowed me to efficiently identify and eliminate redundant data.
 
 ```SQL
  --CHECKING FOR AND DELETING DUPLICATES
@@ -75,7 +75,7 @@ FROM deleteDuplicates
 WHERE row_num > 1
 ```
 
-4. ***Multiple Data Tables***; Additionally, the original dataset was spread across multiple Excel sheets. After individually cleaning these tables using SQL, I used JOIN operations to consolidate the data and transfer it to PowerBI for visualization. UNION wasn't applicable, as the tables lacked matching column structures required for merging into a single table.
+- ***Multiple Data Tables***; Additionally, the original dataset was spread across multiple Excel sheets. After individually cleaning these tables using SQL, I used JOIN operations to consolidate the data and transfer it to PowerBI for visualization. UNION wasn't applicable, as the tables lacked matching column structures required for merging into a single table.
 
 ```SQL
  SELECT * FROM Project3.dbo.movie_box_office_data$

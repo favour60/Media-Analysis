@@ -17,9 +17,8 @@ So, this project aims to explore themes like Box Office Performance, Audience de
 
 ### Tools and Steps involved in this project
 
-1. Extracted raw Excel data into **SQL** and conducted thorough cleaning
-2. Used SQL for tasks such as age group categorization and null handling
-3. Exported the cleaned data into **PowerBI** for visualization and trend analysis
+1. Extracted raw Excel data into **SQL**, where i conducted thorough cleaning task such as null handling, data standardizing, duplicates removal, etc.
+2. Exported the cleaned data into **PowerBI** for task such as age group categorization, visualization and trend analysis
 
 ### Challenges & Solutions
 
